@@ -236,3 +236,5 @@ def confusion_matrix_sklearn(model, predictors, target):
     sns.heatmap(cm, annot=labels, fmt="")
     plt.ylabel("True label")
     plt.xlabel("Predicted label")
+ 
+confusion_matrix_sklearn(xgb_tuned,x_test,y_test) #a confusion matrix to check where the predictions are going
